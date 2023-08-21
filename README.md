@@ -1,88 +1,77 @@
-**Azure Resource Group Terraspace**
+![output](https://user-images.githubusercontent.com/22789918/143985145-12706dc3-be15-45cc-b885-73c35443cc07.jpg)
 
-This repository contains infrastructure code written using [Terraspace](https://terraspace.cloud/) for creating and managing Azure Resource Groups. Terraspace is a framework for building and managing cloud infrastructure with Terraform. It provides an organized and maintainable way to write infrastructure-as-code (IAC) using the power of Terraform and Ruby.
 
-## Table of Contents
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Configuration](#configuration)
-- [Deployment](#deployment)
-- [Clean Up](#clean-up)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Introduction
+# Getting Started with Create React App
 
-This repository demonstrates the use of Terraspace to create and manage Azure Resource Groups. Azure Resource Groups are used to logically organize and manage resources within an Azure subscription. Terraspace helps in simplifying the process of defining, deploying, and managing these resource groups using Terraform.
 
-## Prerequisites
 
-Before you begin, ensure you have the following prerequisites:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- [Terraform](https://www.terraform.io/) installed.
-- [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) installed and configured.
-- [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed (Terraspace uses Ruby for configuration and scripting).
+## Available Scripts
 
-## Getting Started
+In the project directory, you can run:
 
-1. Clone this repository:
+### `yarn start`
 
-   ```sh
-   git clone https://github.com/ahmetaslan13/Azure-Resource-Group-Terraspace.git
-   ```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-2. Navigate to the project directory:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-   ```sh
-   cd Azure-Resource-Group-Terraspace
-   ```
+### `yarn test`
 
-3. Install the required Ruby gems:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-   ```sh
-   bundle install
-   ```
+### `yarn build`
 
-## Configuration
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Configure your Azure credentials by logging in with Azure CLI:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   ```sh
-   az login
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. Update the Terraspace configuration files located in the `config` directory to customize your deployment settings.
+### `yarn eject`
 
-3. Modify the `main.tf` file in the `app/stacks/resource_group` directory to adjust the Azure Resource Group properties as needed.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Deployment
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Deploy the Azure Resource Group using Terraspace:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-```sh
-bundle exec terraspace up resource_group
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-This command will create the specified Azure Resource Group based on your configuration.
+## Learn More
 
-## Clean Up
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To remove the deployed resources, use Terraspace to destroy the Azure Resource Group:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```sh
-bundle exec terraspace down resource_group
-```
+### Code Splitting
 
-## Contributing
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Contributions are welcome! If you find any issues or have improvements to suggest, please open a GitHub issue or pull request.
+### Analyzing the Bundle Size
 
-## License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-This project is licensed under the [MIT License](LICENSE).
+### Making a Progressive Web App
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-**Note:** Terraspace abstracts and simplifies the Terraform deployment process by utilizing Ruby for configuration and deployment management. Make sure to refer to Terraspace documentation and Terraform best practices for more advanced usage and customization options.
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
